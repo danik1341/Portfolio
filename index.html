@@ -7,23 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/4754836c1f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <navbar>
         <div class="navbar_container">
             <div class="nav_bar_logo">
-                <a href="index.html"><img src="/assets/Logo.png" alt=""></a>
+                <a href="#main_section"><img src="/assets/Logo.png" alt=""></a>
             </div>
             <div class="nav_bar_links_container">
-                <a class="link_nav_bar_settings" href="about.html">About</a>
-                <a class="link_nav_bar_settings" href="progects.html">Projects</a>
+                <a class="link_nav_bar_settings" href="#about_section">About</a>
+                <a class="link_nav_bar_settings" href="#project_section">Projects</a>
             </div>
             <div class="button_contact_us_nav_bar">
-                <a href="contact.html"><button class="button_settings_nav_bar">Contact</button></a>
+                <a href="#contact_section"><button class="button_settings_nav_bar">Contact</button></a>
             </div>
         </div>
     </navbar>
-    <div class="main_page">
+    <div class="portfolio">
+    <section id="main_section">
+        <div class="main_page">
         <div class="main_2_sections_container">
             <div class="card_1">
                 <div class="card_1_first_line_container">
@@ -36,8 +39,8 @@
                 <h3 class="card_1_third_line">Full Stack Web Developer</h3>
                 </div>  
                 <div class="card_1_fourth_line_container">
-                    <div class="social_btns"><a href=""><img src="/assets/github_icon.png"></a></div>
-                    <div class="social_btns"><a href=""><img src="/assets/linkedin_icon.png"></a></div>
+                    <div class="social_btns"><a href="https://github.com/danik1341" target="_blank" style="color: black;"><i class="fa-brands fa-square-github fa-3x"></i></a></div>
+                    <div class="social_btns"><a href="" target="_blank" style="color: black;"><i class="fa-brands fa-linkedin fa-3x"></i></a></div>
                 </div>
             </div>
             <div class="card_2">
@@ -48,7 +51,7 @@
                     <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
                 </div>
                 <div class="button_card_2_under_undertext_container">
-                    <a href="about.html"><button class="button_card_2_under_undertext_settings">More...</button></a>
+                    <a href="#about_section"><button class="button_card_2_under_undertext_settings">More...</button></a>
                 </div>
             </div>
         </div>
@@ -104,13 +107,14 @@
                 </div>  
             </div>
             <div class="boxes_button_container">
-                <button class="btn_projects">For More...<img src="assets/arrow.png" style="width: 29.96px; height: 30.23px;"></button>
+                <a href="#project_section"><button class="btn_projects">For More...<i class="fa-regular fa-circle-right fa-2xl"></i></button></a>
             </div>
             </div>
         </div>
-    </div>
-    <div class="about">
-        <div class="col_color"></div>
+        </div>
+    </section>
+    <section id="about_section">
+        <div class="about">
         <div class="about_me">
             <h1 class="few_words">A FEW WORDS ABOUT ME:</h1>
             <p class="about_para">
@@ -127,28 +131,29 @@
             <h1 class="using">USING NOW:</h1>
             <div class="program_list">
                 <div class="program_line">
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
+                <div class="program"><i class="fa-brands fa-square-js fa-3x" style="color: yellow; background-color: black; border-radius: 5px;"></i><h1 class="program_name">JavaScript</h1></div>
+                <div class="program"><i class="fa-brands fa-html5 fa-3x" style="color: #FF5722; background-color: white; border-radius: 5px;"></i><h1 class="program_name">HTML5</h1></div>
+                <div class="program"><i class="fa-brands fa-css3-alt fa-3x" style="color: #2196F3; background-color: white; border-radius: 5px;"></i><h1 class="program_name">CSS3</h1></div>
+                <div class="program"><i class="fa-brands fa-git-alt fa-3x" style="color: orangered;"></i><h1 class="program_name">Git</h1></div>
+                <div class="program"><i class="fa-brands fa-figma fa-3x" style="color:#0ACF83;"></i><h1 class="program_name">Figma</h1></div>
             </div>
             <div class="program_line">
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
-                <div class="program"><img src="assets/js_icon.png"><label>PROGRAM</label></div>
+                <div class="program"><i class="fa-brands fa-node-js fa-3x" style="color: #539E43;"></i><h1 class="program_name">NodeJS</h1></div>
+                <div class="program"><i class="fa-solid fa-leaf fa-3x" style="color: #539E43;"></i><h1 class="program_name">MONGODB</h1></div>
+                <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
+                <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
+                <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
+                <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
                 <div class="additional">
-                    <button class="btn_additional">Additional<img src="assets/arrow.png" style="width: 29.96px; height: 30.23px;"></button>
-                    <img src="">
+                    <button class="btn_additional">Additional<i class="fa-regular fa-circle-right fa-2xl"></i></button>
                 </div>
             </div>
             </div>
         </div>
-    </div>
-    <div class="projects_page">
+        </div>
+    </section>
+    <section id="project_section">
+        <div class="projects_page">
         <div class="projects">
         <div class="line">
             <div class="project_container">
@@ -326,19 +331,27 @@
         </div>
         </div>
         <div class="pages">
-        <div class="arrow-back">
-            <img>
+            <div class="pages_box">
+            <div class="arrow-back">
+                <button class="btn_arrow_up" style="all: unset; cursor: pointer;">
+                    <i class="fa-solid fa-arrow-up fa-xl"></i>
+                </button>
+            </div>
+            <div class="first"><button class="btn_first">1</button></div>
+            <div class="num"><button class="btn_num">2</button></div>
+            <div class="num"><button class="btn_num">3</button></div>
+            <div class="last"><button class="btn_last">4</button></div>
+            <div class="arrow-forward">
+                <button class="btn_arrow_up" style="all: unset; cursor: pointer;">
+                    <i class="fa-solid fa-arrow-down fa-xl"></i>
+                </button>
+            </div>
+            </div>
         </div>
-        <div class="first"><button class="btn_first">1</button></div>
-        <div class="num"><button class="btn_num">2</button></div>
-        <div class="num"><button class="btn_num">3</button></div>
-        <div class="last"><button class="btn_last">4</button></div>
-        <div class="arrow-forward">
-            <img>
         </div>
-        </div>
-    </div>
-    <div class="contact_page">
+    </section>
+    <section id="contact_section">
+        <div class="contact_page">
         <h1 class="contact_h">Thank you for taking your time and reaching out for me!<br>
             How may I help you today?
         </h1>
@@ -357,13 +370,15 @@
                 <button class="sub">Submit</button>
             </div>
         </form>
-    </div>
-    <footer>
-        <div class="back_top">
-            <div class="btn_top_box">
-            <button class="btn_top">Back Up Top<img src="assets/arrow.png" style="width: 29.96px; height: 30.23px; transform: rotate(-90.59deg); color: white;"></button>
+        <footer>
+            <div class="back_top">
+                <div class="btn_top_box">
+                <button class="btn_top"><a href="#main_section" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: inherit;">Back Up Top<i class="fa-regular fa-circle-up"></i></a></button>
+                </div>
             </div>
+            </footer>
         </div>
-    </footer>
+    </section>
+    </div>
 </body>
 </html>
