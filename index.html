@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/4754836c1f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <navbar>
@@ -16,7 +17,7 @@
                 <a href="#main_section"><img src="/assets/Logo.png" alt=""></a>
             </div>
             <div class="nav_bar_links_container">
-                <a class="link_nav_bar_settings" href="#about_section">About</a>
+                <a class="link_nav_bar_settings" href="#about_section" onclick="goToAddi('about_additional')">About</a>
                 <a class="link_nav_bar_settings" href="#project_section">Projects</a>
             </div>
             <div class="button_contact_us_nav_bar">
@@ -145,11 +146,32 @@
                 <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
                 <div class="program"><img src="assets/js_icon.png"><h1 class="program_name">PROGRAM</h1></div>
                 <div class="additional">
-                    <button class="btn_additional">Additional<i class="fa-regular fa-circle-right fa-2xl"></i></button>
+                    <button class="btn_additional" onclick="return show('about_additional','about_section')">Additional<i class="fa-regular fa-circle-right fa-2xl"></i></button>
                 </div>
             </div>
             </div>
         </div>
+        </div>
+    </section>
+    <section id="about_additional" class="about_additional">
+        <div class="top_card">
+            <div class="additional_skills_box">
+                <h1 class="additional_skills">ADDITIONAL SKILLS</h1>
+            </div>
+            <div class="addi_prog_list">
+                <div class="addi_program"><i class="fa-brands fa-java fa-4x" style="background-color: white; border-radius: 5px;"></i><h1 class="addi_name">Java</h1></div>
+                <div class="addi_program"><img src="assets/Csharp.png" style="width: 50px; height: 65px;"><h1 class="addi_name">C#</h1></div>
+            </div>
+        </div>
+        <div class="bottom_card">
+            <h1 class="studying">STUDYING NOW:</h1>
+            <div class="study_list">
+                <div class="study_program"><i class="fa-regular fa-gem fa-3x"></i><h1 class="addi_name">Ruby</h1></div>
+                <div class="study_program"><i class="fa-brands fa-python fa-3x"></i><h1 class="addi_name">Python</h1></div>
+            </div>
+            <div class="additional_addi_page">
+                <button class="btn_additional" onclick="return show('about_section','about_additional')">Additional<i class="fa-regular fa-circle-right fa-2xl"></i></button>
+            </div>
         </div>
     </section>
     <section id="project_section">

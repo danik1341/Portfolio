@@ -450,8 +450,106 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
+/*! additional about page !*/
+
+.about_additional{
+    width: 100vw;
+    background-color: #ABABAB; 
+    background-image: url(assets/About-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+}
+.top_card{
+    display: flex;
+    flex-direction: column;
+}
+.additional_skills_box{
+    box-sizing: border-box;
+    border: 8px solid #000000;
+    width: 50vw;
+    height: 10vh;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.additional_skills{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.35538em;
+}
+.addi_prog_list{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    margin-left: 5vw;
+}
+.addi_program{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addi_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.13538em;
+}
+.bottom_card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+.studying{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.18538em;
+    margin-left: 1vw;
+}
+.study_list{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+.study_program{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.additional_addi_page{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+}
+/*! additional page !*/
 
 /*-about page-*/
 
