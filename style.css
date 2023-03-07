@@ -7,6 +7,10 @@ body, html {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 div {
     margin: 0;
@@ -453,7 +457,7 @@ a {
     justify-content: space-between;
 }
 
-/*! additional about page !*/
+/*! - additional about page - !*/
 
 .about_additional{
     width: 100vw;
@@ -671,6 +675,122 @@ a {
     text-align: center;
     color: #000000;
 }
+
+/*! - project detail - !*/
+
+.project_detail_page{
+    width: 100%;
+    height: 100%;
+    background-color: #909090;
+    background-image: url(assets/projects-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.project_white_box{
+    background-color: white;
+    width: 95vw;
+    height: 80vh;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.top_project_line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.project_name_info{
+    margin-left: 2vw;
+}
+.product_name{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+}
+.product_catagory {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 45px;
+    list-style: none;
+}
+.product_catagory li::before{
+    content: "•";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -25px;
+}
+.back_projects{
+    color: black;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding: 15px;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 65vw;
+}
+.btn_back_project{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5vh;
+}
+.project_detail{
+    width: 85vw;
+    height: 35vh;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138.68%;
+    text-transform: capitalize;
+    margin-left: 1vw;
+}
+.projects_pics_detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    gap: 60px;
+}
+.btn_back_pics_details{
+    all: unset;
+    cursor: pointer;
+}
+.pic_detail{
+    all: unset;
+    cursor: pointer;
+}
+.btn_forward_pics_details{
+    all: unset;
+    cursor: pointer;
+}
+
+/*!project detail!*/
 
 /*-projects page-*/
 

@@ -18,7 +18,7 @@
             </div>
             <div class="nav_bar_links_container">
                 <a class="link_nav_bar_settings" href="#about_section" onclick="goToAddi('about_additional')">About</a>
-                <a class="link_nav_bar_settings" href="#project_section">Projects</a>
+                <a class="link_nav_bar_settings" href="#project_section" onclick="goToProj('project_detail_page')">Projects</a>
             </div>
             <div class="button_contact_us_nav_bar">
                 <a href="#contact_section"><button class="button_settings_nav_bar">Contact</button></a>
@@ -59,7 +59,7 @@
         <div class="projects_main">
             <h1 class="recent_projects_headline">Recent Projects:</h1>
             <div class="boxes_container">
-            <div class="box_1">
+        <button class="btn_recent_for_details" id="btn_recent_for_details" style="all: unset; cursor: pointer;" onclick="goToProjRecent()"><div class="box_1">
                 <div>
                 <img class="overout" style="border-radius: 25px; margin-left: 40px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box_1 " >
@@ -75,7 +75,8 @@
                 </div>
                 </div>  
             </div>
-            <div class="box_2">
+        </button>
+        <button class="btn_recent_for_details" id="btn_recent_for_details" style="all: unset; cursor: pointer;" onclick="goToProjRecent()"><div class="box_2">
                 <div>
                 <img class="overout" style="border-radius: 25px; margin-left: 40px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box_1 " >
@@ -91,7 +92,8 @@
                 </div>
                 </div>
             </div>
-            <div class="box_3">
+        </button>
+        <button class="btn_recent_for_details" id="btn_recent_for_details" style="all: unset; cursor: pointer;" onclick="goToProjRecent()"><div class="box_3">
                 <div>
                 <img class="overout"  style="border-radius: 25px; margin-left: 40px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box_1 ">
@@ -107,6 +109,7 @@
                 </div>
                 </div>  
             </div>
+        </button>
             <div class="boxes_button_container">
                 <a href="#project_section"><button class="btn_projects">For More...<i class="fa-regular fa-circle-right fa-2xl"></i></button></a>
             </div>
@@ -178,7 +181,7 @@
         <div class="projects_page">
         <div class="projects">
         <div class="line">
-            <div class="project_container">
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -192,7 +195,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -206,7 +210,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -220,7 +225,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -234,9 +240,10 @@
                     </div>
                 </div>
             </div>
+        </button>
         </div>
         <div class="line">
-            <div class="project_container">
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -250,7 +257,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -264,7 +272,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -278,7 +287,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -292,9 +302,10 @@
                     </div>
                 </div>
             </div>
+        </button>
         </div>
         <div class="line">
-            <div class="project_container">
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -308,7 +319,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -322,7 +334,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -336,7 +349,8 @@
                     </div>
                 </div>
             </div>
-            <div class="project_container">
+        </button>
+        <button class="btn_pic_for_details" id="btn_pic_for_details" style="all: unset; cursor: pointer;" onclick="return show('project_detail_page','project_section')"><div class="project_container">
                 <img class="project_pic" style="border-radius: 25px;" src="/assets/colorful-vintage-collage-design 1.png" alt="">
                 <div class="white_box">
                     <div class="box_text">
@@ -350,6 +364,7 @@
                     </div>
                 </div>
             </div>
+        </button>
         </div>
         </div>
         <div class="pages">
@@ -370,6 +385,39 @@
             </div>
             </div>
         </div>
+        </div>
+    </section>
+    <section id="project_detail_page" class="project_detail_page">
+        <div class="project_white_box">
+            <div class="top_project_line">
+                <div class="project_name_info">
+                    <h1 class="product_name">Product Name:</h1><hr>
+                    <ol class="product_catagory">
+                        <li>Catagory</li>
+                        <li>Catagory</li>
+                        <li>Catagory</li>
+                    </ol>
+                </div>
+                <div class="back_projects"><button class="btn_back_project" onclick="return show('project_section','project_detail_page')">Back To Projects<i class="fa-regular fa-circle-left fa-2xl"></i></button></div>
+            </div>
+            <div class="project_detail">
+                <p class="details">
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis liberoasda viverra facilisis ut ac est.
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+                    Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+                </p>
+            </div>
+            <div class="projects_pics_detail">
+                <button class="btn_back_pics_details" id="btn_back_pics_details"><i class="fa-regular fa-circle-left fa-2xl"></i></button>
+                <button class="pic_detail" id="pic_detail"><div class="pic_product"><img src="assets/colorful-vintage-collage-design 1.png" style="height: 15vh; border-radius: 25px;"></div></button>
+                <button class="pic_detail" id="pic_detail"><div class="pic_product"><img src="assets/colorful-vintage-collage-design 1.png" style="height: 15vh; border-radius: 25px;"></div></button>
+                <button class="pic_detail" id="pic_detail"><div class="pic_product"><img src="assets/colorful-vintage-collage-design 1.png" style="height: 15vh; border-radius: 25px;"></div></button>
+                <button class="pic_detail" id="pic_detail"><div class="pic_product"><img src="assets/colorful-vintage-collage-design 1.png" style="height: 15vh; border-radius: 25px;"></div></button>
+                <button class="btn_forward_pics_details" id="btn_forward_pics_details"><i class="fa-regular fa-circle-right fa-2xl"></i></button>
+            </div>
         </div>
     </section>
     <section id="contact_section">
